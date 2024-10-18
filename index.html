@@ -9,11 +9,12 @@
 <body>
     <div id="navigation">
         <h1>Game Navigation</h1>
+        <input type="text" id="search" placeholder="Search..." oninput="filterActions()">
         <p id="message">Welcome to the game! Choose an option:</p>
         <div id="buttons">
-            <button onclick="navigate('start')">Start Game</button>
-            <button onclick="navigate('settings')">Settings</button>
-            <button onclick="navigate('quit')">Quit</button>
+            <button class="action-button" onclick="navigate('start')">Start Game</button>
+            <button class="action-button" onclick="navigate('settings')">Settings</button>
+            <button class="action-button" onclick="navigate('quit')">Quit</button>
         </div>
     </div>
 
