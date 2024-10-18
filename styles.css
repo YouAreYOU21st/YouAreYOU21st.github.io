@@ -1,32 +1,16 @@
-* {
-    box-sizing: border-box;
-}
+/* Existing styles */
 
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #2c3e50, #34495e);
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 50px;
-}
-
-#navigation {
-    padding: 30px;
-    border: 2px solid #ecf0f1;
-    background: rgba(52, 73, 94, 0.8);
-    border-radius: 12px;
-    display: inline-block;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
-h1 {
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
     margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-p {
-    font-size: 18px;
-    margin-bottom: 30px;
+.action-button {
+    display: inline-block; /* Ensures buttons are aligned properly */
 }
 
 button {
@@ -44,10 +28,4 @@ button {
 button:hover {
     background-color: #c0392b;
     transform: scale(1.05);
-}
-
-footer {
-    margin-top: 40px;
-    font-size: 14px;
-    color: #ecf0f1;
 }
