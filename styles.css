@@ -1,31 +1,32 @@
-/* Existing styles */
+/* Existing styles... */
 
-input[type="text"] {
+h2 {
+    margin-top: 40px;
+}
+
+#gameSearch {
     width: 80%;
     padding: 10px;
     margin-bottom: 20px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    outline: none; /* Remove default outline */
 }
 
-.action-button {
-    display: inline-block; /* Ensures buttons are aligned properly */
+#gameList {
+    list-style-type: none;
+    padding: 0;
 }
 
-button {
-    margin: 5px;
-    padding: 12px 25px;
-    background-color: #e74c3c;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
+.game-item {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
-button:hover {
-    background-color: #c0392b;
-    transform: scale(1.05);
+.game-item:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
