@@ -3,35 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Selector</title>
+    <title>Shooter Game with High Scores</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container" id="login-container">
-        <h1>Login</h1>
-        <input type="text" id="username" placeholder="Username" />
-        <input type="password" id="password" placeholder="Password" />
-        <button id="login-button">Login</button>
-        <button id="show-register-button">Register</button>
-        <div id="error-message" class="error"></div>
+    <div id="game-container">
+        <h1>Shooter Game</h1>
+        <div id="score">Score: 0</div>
+        <div id="timer">Time: 30</div>
+        <div id="level">Level: 1</div>
+        <button id="start-button">Start Game</button>
+        <button id="difficulty-button">Select Difficulty</button>
+        <div id="game-mode-button">Game Mode: Timed</div>
+        <div id="targets"></div>
+        <div id="power-up" style="display: none;"></div>
+        <div id="game-over" style="display: none;">
+            Game Over! Your score: <span id="final-score"></span><br>
+            <input type="text" id="player-name" placeholder="Enter your name">
+            <button id="submit-score-button">Submit Score</button>
+            <button id="restart-button">Play Again</button>
+            <button id="high-scores-button">View High Scores</button>
+        </div>
+        <div id="high-scores" style="display: none;">
+            <h2>High Scores</h2>
+            <ol id="score-list"></ol>
+            <button id="close-high-scores">Close</button>
+        </div>
     </div>
-
-    <div class="container" id="register-container" style="display: none;">
-        <h1>Register</h1>
-        <input type="text" id="register-username" placeholder="Username" />
-        <input type="password" id="register-password" placeholder="Password" />
-        <button id="register-button">Register</button>
-        <button id="show-login-button">Back to Login</button>
-        <div id="register-error-message" class="error"></div>
-    </div>
-
-    <div class="container" id="game-container" style="display: none;">
-        <h1>Game Selector</h1>
-        <input type="text" id="search" placeholder="Search for games..." />
-        <ul id="game-list"></ul>
-        <button id="logout-button">Logout</button>
-    </div>
-
+    <audio id="background-music" src="background.mp3" loop></audio>
+    <audio id="hit-sound" src="hit.mp3"></audio>
+    <audio id="game-over-sound" src="gameover.mp3"></audio>
     <script src="script.js"></script>
 </body>
 </html>
