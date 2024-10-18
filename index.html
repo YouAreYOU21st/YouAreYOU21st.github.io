@@ -19,14 +19,17 @@
         
         <h2>Search Games</h2>
         <input type="text" id="gameSearch" placeholder="Search for games..." oninput="filterGames()">
-        <ul id="gameList">
-            <li class="game-item">The Legend of Zelda</li>
-            <li class="game-item">Super Mario Odyssey</li>
-            <li class="game-item">Minecraft</li>
-            <li class="game-item">Stardew Valley</li>
-            <li class="game-item">Overwatch</li>
-            <li class="game-item">Fortnite</li>
-        </ul>
+        <div id="gameListContainer">
+            <ul id="gameList">
+                <li class="game-item">The Legend of Zelda</li>
+                <li class="game-item">Super Mario Odyssey</li>
+                <li class="game-item">Minecraft</li>
+                <li class="game-item">Stardew Valley</li>
+                <li class="game-item">Overwatch</li>
+                <li class="game-item">Fortnite</li>
+            </ul>
+            <p id="noGamesMessage" style="display: none;">🔍 No games found. Please refine your search.</p>
+        </div>
     </div>
 
     <footer>
