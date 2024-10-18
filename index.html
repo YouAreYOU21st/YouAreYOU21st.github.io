@@ -1,13 +1,26 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Navigation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<p>dumbaaaass</p>
+    <div id="navigation">
+        <h1>Game Navigation</h1>
+        <p id="message">Welcome to the game! Choose an option:</p>
+        <div id="buttons">
+            <button onclick="navigate('start')">Start Game</button>
+            <button onclick="navigate('settings')">Settings</button>
+            <button onclick="navigate('quit')">Quit</button>
+        </div>
+    </div>
 
-<audio loop autoplay>
-  <source src="0.01 win rate.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+    <footer>
+        <p>Made with ❤️ by Your Name</p>
+    </footer>
 
-
+    <script src="script.js"></script>
 </body>
 </html>
