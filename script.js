@@ -45,6 +45,7 @@ function filterActions() {
 function filterGames() {
     const gameSearchInput = document.getElementById('gameSearch').value.toLowerCase();
     const gameItems = document.querySelectorAll('.game-item');
+    const noGamesMessage = document.getElementById('noGamesMessage');
 
     let hasVisibleGames = false;
 
@@ -58,8 +59,6 @@ function filterGames() {
         }
     });
 
-    // Optionally, you can handle messages for the game search as well
-    if (!hasVisibleGames) {
-        // You can update a message for games if needed
-    }
+    // Show or hide the no games message
+    noGamesMessage.style.display = hasVisibleGames ? 'none' : 'block';
 }
