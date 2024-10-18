@@ -7,11 +7,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="login-container">
+        <h1>Login</h1>
+        <input type="text" id="username" placeholder="Username" />
+        <input type="password" id="password" placeholder="Password" />
+        <button id="login-button">Login</button>
+        <div id="error-message" class="error"></div>
+    </div>
+
+    <div class="container" id="game-container" style="display: none;">
         <h1>Game Selector</h1>
         <input type="text" id="search" placeholder="Search for games..." />
         <ul id="game-list"></ul>
+        <button id="logout-button">Logout</button>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
