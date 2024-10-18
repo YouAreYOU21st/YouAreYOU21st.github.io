@@ -9,13 +9,24 @@
 <body>
     <div id="navigation">
         <h1>Game Navigation</h1>
-        <input type="text" id="search" placeholder="Search..." oninput="filterActions()">
+        <input type="text" id="search" placeholder="Search for actions..." oninput="filterActions()">
         <p id="message">Welcome to the game! Choose an option:</p>
         <div id="buttons">
             <button class="action-button" onclick="navigate('start')">Start Game</button>
             <button class="action-button" onclick="navigate('settings')">Settings</button>
             <button class="action-button" onclick="navigate('quit')">Quit</button>
         </div>
+        
+        <h2>Search Games</h2>
+        <input type="text" id="gameSearch" placeholder="Search for games..." oninput="filterGames()">
+        <ul id="gameList">
+            <li class="game-item">The Legend of Zelda</li>
+            <li class="game-item">Super Mario Odyssey</li>
+            <li class="game-item">Minecraft</li>
+            <li class="game-item">Stardew Valley</li>
+            <li class="game-item">Overwatch</li>
+            <li class="game-item">Fortnite</li>
+        </ul>
     </div>
 
     <footer>
