@@ -17,3 +17,17 @@ function navigate(action) {
 
     document.getElementById('message').innerText = message;
 }
+
+function filterActions() {
+    const searchInput = document.getElementById('search').value.toLowerCase();
+    const buttons = document.querySelectorAll('.action-button');
+
+    buttons.forEach(button => {
+        const buttonText = button.innerText.toLowerCase();
+        if (buttonText.includes(searchInput)) {
+            button.style.display = ''; // Show button
+        } else {
+            button.style.display = 'none'; // Hide button
+        }
+    });
+}
